@@ -5,6 +5,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://kohlhofer.github.io',
+  base: '/midiVol',
   vite: {
     plugins: [tailwindcss()]
   }
