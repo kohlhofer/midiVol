@@ -109,13 +109,13 @@ Three-column grid highlighting:
 
 ### Messaging Hierarchy
 1. **Primary:** "Control your Mac's volume with any MIDI controller"
-2. **Secondary:** "Perfect for musicians, producers, and audio professionals"
+2. **Secondary:** "Perfect for anyone with a MIDI controller who wants convenient volume control"
 3. **Features:** System volume, Apple Music, MIDI Learn, menu bar integration
 
 ### App Store Optimization
-- Focus on keywords: MIDI, volume control, macOS, audio, music production
-- Highlight professional use cases
-- Emphasize ease of setup with MIDI Learn
+- Focus on keywords: MIDI, volume control, macOS, audio, convenience
+- Highlight ease of use for everyday Mac users
+- Emphasize simple setup with MIDI Learn
 
 ## Future Considerations
 - Blog section for updates and tutorials

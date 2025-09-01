@@ -59,8 +59,8 @@ git push origin main # Deploy via GitHub Actions
 6. **Sandbox Security** - App Store ready with minimal permissions
 
 ### Content Guidelines
-- Target audience: Musicians, producers, audio professionals
-- Emphasize ease of setup and professional use cases
+- Target audience: Mac users with MIDI controllers (hobbyists, casual users, anyone wanting convenient volume control)
+- Emphasize ease of setup and everyday convenience
 - Highlight macOS integration and security
 - Focus on immediate, tactile control benefits
 
@@ -69,7 +69,7 @@ git push origin main # Deploy via GitHub Actions
 - Purple color scheme matching app icon
 - Large, prominent app icon display
 - Clear, action-oriented CTAs
-- Professional yet approachable tone
+- Friendly and approachable tone
 
 ### Assets Available
 - `images/AppIcon.png` - High-resolution app icon
@@ -80,8 +80,8 @@ git push origin main # Deploy via GitHub Actions
 - `context/MIDIVolumeControlHelp.md` - User help documentation
 
 ### SEO Focus
-- Keywords: MIDI, volume control, macOS, audio control, music production
-- Target: Musicians and audio professionals using macOS
+- Keywords: MIDI, volume control, macOS, audio control, convenience
+- Target: Mac users with MIDI controllers seeking easy volume control
 - App Store optimization for discoverability
 
 ## Development Workflow
