@@ -12,7 +12,7 @@
           <div class="text-sm font-semibold text-purple-600 uppercase tracking-wide mb-2">
             Mac App
           </div>
-          <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-none">
             MIDI Volume
             <span class="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
               Control
@@ -20,7 +20,7 @@
           </h1>
           
           <p class="text-xl md:text-2xl text-gray-600 max-w-2xl">
-            Control your Mac's volume with any MIDI controller
+            Control your Mac's system and music volume effortlessly with any MIDI controller
           </p>
         </div>
 
@@ -29,7 +29,7 @@
           <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a 
               href="#" 
-              class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-purple-600 to-indigo-600 rounded-xl hover:from-purple-700 hover:to-indigo-700 transition-all duration-200 shadow-lg hover:shadow-xl"
+              class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-purple-600 to-indigo-600 rounded-xl hover:from-purple-700 hover:to-indigo-700 transition-colors duration-200 shadow-lg"
             >
               <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.13997 6.91 8.85997 6.88C10.15 6.85 11.36 7.72 12.11 7.72C12.86 7.72 14.28 6.66 15.84 6.84C16.47 6.87 18.22 7.13 19.29 8.82C19.2 8.89 17.69 9.73 17.72 11.57C17.76 13.8 19.73 14.58 19.76 14.6C19.74 14.67 19.39 15.9 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
@@ -55,7 +55,8 @@
           <img 
             src={import.meta.env.BASE_URL + 'AppIcon.png'} 
             alt="MIDI Volume Control App Icon" 
-            class="w-56 h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 drop-shadow-2xl"
+            class="w-56 h-56 md:w-72 md:h-72 lg:w-80 lg:h-80"
+            style="filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15)) drop-shadow(0 10px 10px rgb(0 0 0 / 0.04));"
           />
           <!-- Subtle glow effect -->
           <div class="absolute inset-0 bg-purple-400 opacity-20 blur-3xl rounded-full -z-10"></div>
