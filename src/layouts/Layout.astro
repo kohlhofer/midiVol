@@ -11,6 +11,26 @@ const { title, description = "Control your Mac's volume with any MIDI controller
 
 const siteUrl = import.meta.env.PROD ? 'https://kohlhofer.com/midiVol' : 'http://localhost:4321';
 const fullOgImageUrl = siteUrl + '/' + ogImage;
+
+// MIDI Volume Control's home is now fieldbw.com. These pages stay live and
+// unchanged because the App Store listing still links to them, so redirecting
+// is not an option — but each is a duplicate of a fieldbw page. A cross-domain
+// canonical tells Google to index and credit the fieldbw version while
+// visitors here are never moved.
+//
+// Keyed by path with the /midiVol base and any trailing slash stripped. A page
+// not listed here emits no canonical rather than a wrong one.
+const FIELDBW_EQUIVALENT = {
+  '/': 'https://fieldbw.com/midi-volume/',
+  '/terms': 'https://fieldbw.com/terms/midi-volume/',
+  '/privacy': 'https://fieldbw.com/privacy/midi-volume/',
+  // Support here is just an email link; /contact/ is its counterpart, since
+  // fieldbw has no per-product support page.
+  '/support': 'https://fieldbw.com/contact/',
+};
+
+const routeKey = Astro.url.pathname.replace(/^\/midiVol/, '').replace(/\/+$/, '') || '/';
+const canonicalUrl = FIELDBW_EQUIVALENT[routeKey];
 ---
 
 <!DOCTYPE html>
@@ -21,7 +41,8 @@ const fullOgImageUrl = siteUrl + '/' + ogImage;
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="generator" content={Astro.generator} />
-  
+  {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+
   <!-- SEO Meta Tags -->
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
